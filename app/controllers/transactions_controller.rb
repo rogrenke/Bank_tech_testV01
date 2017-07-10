@@ -5,6 +5,9 @@ class TransactionsController < ApplicationController
   end
 
   def create
+    old_balance = current_user.balance
+    p (transaction_params[:amount]).to_f
+    current_user.update(balance: old_balance + (transaction_params[:amount]).to_f )
     @transaction = current_user.transactions.build(transaction_params)
     @transaction.update(balance_after_transaction: current_user.balance)
 
