@@ -1,0 +1,24 @@
+<h1>New Transaction</h1>
+
+<% if @errors.present? %>
+  <div class="errors">
+    <ul>
+      <% @errors.each do |error| %>
+        <li><%= error %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<%= form_for @transaction do |form| %>
+  <div class="form-group">
+    <%= form.label :amount %>
+    <%= form.text_field :amount %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+
+<%= link_to "Back to Account", user_path(current_user) %>
