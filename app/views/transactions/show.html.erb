@@ -1,16 +1,15 @@
-<h1><%= @transaction.id %></h1>
+<h1>Transaction ID: <%= @transaction.id %></h1>
 
-<h2>Type:</h2>
-<% if transaction.amount < 0.0 %>
-  <p>Withdrawal</p>
-<% else %>
-  <p>Deposit</p>
+<h2>Type: <span>
+<% if @transaction.amount < 0.0 %>
+  Withdrawal
+<% elsif @transaction.amount > 0.0 %>
+  Deposit
 <% end %>
+</span></h2>
 
 <h2>Amount:<%= @transaction.amount %></h2>
 
-<div>
-  <ul class="recipe-actions">
-    <li><%= link_to "Back", user_path(current_user) %></li>
-  </ul>
+<div class="transaction-actions">
+  <%= link_to "Back", user_path(current_user) %>
 </div>
