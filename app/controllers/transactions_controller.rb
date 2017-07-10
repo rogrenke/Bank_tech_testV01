@@ -1,5 +1,9 @@
 class TransactionsController < ApplicationController
 
+  def index
+    @transactions = Transaction.where(user_id: current_user.id).reverse
+  end
+
   def new
     @transaction = current_user.transactions.build
   end
