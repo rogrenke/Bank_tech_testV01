@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(version: 20170710154214) do
     t.float "amount", null: false
     t.float "balance_after_transaction", null: false
     t.bigint "user_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_transactions_on_user_id"
   end
 

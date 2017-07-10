@@ -3,6 +3,6 @@
 <p>date || transaction type || balance </p>
 <ul class="account-statement">
   <% @transactions.each do |transaction| %>
-
+    <li> <%=transaction.created_at %> </li>
   <% end %>
 </ul>
