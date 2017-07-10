@@ -37,8 +37,15 @@ So that I can see what's going on with my account,
 I want to be able to print a account statement which shows all transactions
 
 ```
-
-Update:
+---
+Update1:
 - after 4 hours of coding I build the app satisfying all user stories
 - however not yet live on Heroku
 - For user testing, I should also add some basic styling to improve uer experience
+
+---
+Update2:
+Live on Heroku, check it out:
+https://serene-wave-11867.herokuapp.com/transactions
+
+---
