@@ -1,8 +1,16 @@
 <h1>Account Statement</h1>
 
-<p>date || transaction type || balance </p>
+<h3> Your balance is $<%= @transactions.first.balance_after_transaction %> </h3>
+<%= link_to "Back to your account", user_path(current_user) %>
+
+<p>date || transaction type || transaction amount || balance </p>
 <ul class="account-statement">
   <% @transactions.each do |transaction| %>
-    <li> <%=transaction.created_at %> </li>
+  <% if transaction.amount < 0.0 %>
+  <% transaction_type = "Withdrawal" %>
+  <% else %>
+  <% transaction_type = "Deposit" %>
+  <% end%>
+  <li> <%=transaction.created_at %> || <%= transaction_type %> || <%= transaction.amount %> || <%= transaction.balance_after_transaction %> </li>
   <% end %>
 </ul>
