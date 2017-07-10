@@ -1,8 +1,7 @@
 class UsersController < Clearance::UsersController
 
   def show
-    @user = User.find(params[:id])
-    @userposts = Post.where(user_id: @user.id)
+    @balance = current_user.balance
   end
 
 
