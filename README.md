@@ -21,7 +21,7 @@ So that I feel that my data is secure
 I want sign-in required to interact with my account and want to be able to sign out afterwards
 
 As a user
-So that I can see how many is in my bank account,
+So that I can see how much money is in my bank account,
 I want to be able to see my balance when logged in
 
 As a user
