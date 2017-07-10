@@ -46,6 +46,6 @@ Update1:
 ---
 Update2:
 Live on Heroku, check it out:
-https://serene-wave-11867.herokuapp.com/transactions
+https://serene-wave-11867.herokuapp.com/
 
 ---
