@@ -34,6 +34,6 @@ I want to be able to make withdrawals from my account
 
 As a user
 So that I can see what's going on with my account,
-I want to be able to print a bank statement with shows all transactions
+I want to be able to print a bank statement which shows all transactions
 
 ```
