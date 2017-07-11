@@ -53,4 +53,6 @@ Live on Heroku, check it out:
 https://serene-wave-11867.herokuapp.com/
 
 ---
-  
+Update3:
+Styling finished. Took way longer than expected + is definitely ugly ;)
+However, app would now at a stage where first test users could play around with it.
