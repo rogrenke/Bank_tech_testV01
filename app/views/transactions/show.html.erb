@@ -1,15 +1,19 @@
-<h1>Transaction ID: <%= @transaction.id %></h1>
+<div class="content-container">
+  <div class="contents">
+    <h1>Transaction ID: <%= @transaction.id %></h1>
 
-<h2>Type: <span>
-<% if @transaction.amount < 0.0 %>
-  Withdrawal
-<% elsif @transaction.amount > 0.0 %>
-  Deposit
-<% end %>
-</span></h2>
+    <h2>Type: <span>
+    <% if @transaction.amount < 0.0 %>
+      Withdrawal
+    <% elsif @transaction.amount > 0.0 %>
+      Deposit
+    <% end %>
+    </span></h2>
 
-<h2>Amount:<%= @transaction.amount %></h2>
+    <h2>Amount: $<%= @transaction.amount %></h2>
 
-<div class="transaction-actions">
-  <%= link_to "Back to your account", user_path(current_user) %>
+    <div class="transaction-actions">
+      <%= link_to "Back to your account", user_path(current_user) %>
+    </div>
+  </div>
 </div>

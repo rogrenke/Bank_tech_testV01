@@ -1,7 +1,16 @@
-<h1> Your Account </h1>
+<div class="content-container">
+  <div class="contents">
+    <h1> Your Account </h1>
+    <% if signed_in? %>
+      Signed in as: <%= current_user.email %>
+      <%= button_to 'Sign out', sign_out_path, method: :delete, class: 'btn btn-default' %>
+    <% else %>
+      <%= link_to 'Sign in', sign_in_path %>
+    <% end %>
+    <h3> Your balance is $<%= @balance %> </h3>
 
-<h3> Your balance is $<%= @balance %> </h3>
-
-<%= link_to "New Deposit or Withdrawal", new_transaction_path %>
-<br>
-<%= link_to "Bank Statement", transactions_path %>
+    <%= link_to "New Deposit or Withdrawal", new_transaction_path %>
+    <br>
+    <%= link_to "Account Statement", transactions_path %>
+  </div>
+</div>
