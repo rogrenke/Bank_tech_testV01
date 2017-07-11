@@ -3,14 +3,13 @@
     <h1> Your Account </h1>
     <% if signed_in? %>
       Signed in as: <%= current_user.email %>
-      <%= button_to 'Sign out', sign_out_path, method: :delete, class: 'btn btn-default' %>
+      <%= link_to 'Sign out', sign_out_path, method: :delete%>
     <% else %>
       <%= link_to 'Sign in', sign_in_path %>
     <% end %>
     <h3> Your balance is $<%= @balance %> </h3>
 
-    <%= link_to "New Deposit or Withdrawal", new_transaction_path %>
-    <br>
-    <%= link_to "Account Statement", transactions_path %>
+    <p><%= link_to "New Deposit or Withdrawal", new_transaction_path %> | <%= link_to "Account Statement", transactions_path %></p>
+
   </div>
 </div>

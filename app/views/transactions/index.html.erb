@@ -7,18 +7,30 @@
 
   <h3> Your balance is $<%= @transactions.first.balance_after_transaction %> </h3>
   <%= link_to "Back to your account", user_path(current_user) %>
-
-  <p>date || transaction type || transaction amount || balance </p>
-  <ul class="account-statement">
+  <br>
+  <br>
+  <table class="table">
+    <tr>
+      <th>date</th>
+      <th>transaction type</th>
+      <th>transaction amount</th>
+      <th>balance</th>
+    </tr>
     <% @transactions.each do |transaction| %>
-    <% if transaction.amount < 0.0 %>
-    <% transaction_type = "Withdrawal" %>
-    <% else %>
-    <% transaction_type = "Deposit" %>
-    <% end%>
-    <li> <%=transaction.created_at %> || <%= transaction_type %> || <%= transaction.amount %> || <%= transaction.balance_after_transaction %> </li>
+      <tr>
+        <% if transaction.amount < 0.0 %>
+          <% transaction_type = "Withdrawal" %>
+        <% else %>
+          <% transaction_type = "Deposit" %>
+        <% end%>
+        <td><%=transaction.created_at %></td>
+        <td><%= transaction_type %></td>
+        <td><%= transaction.amount %></td>
+        <td><%= transaction.balance_after_transaction %></td>
+      </tr>
     <% end %>
-  </ul>
+
+  </table>
 
   </div>
 </div>
