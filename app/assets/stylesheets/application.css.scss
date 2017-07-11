@@ -1,0 +1,148 @@
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
+ body {
+   background-color: #e3e3e3;
+   color: #f4f4f4;
+}
+
+a {
+  color: #50db3b;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #39a129;
+    text-decoration: none;
+}
+
+input {
+  color: #5a5a5a;
+  text-align: right;
+}
+
+::-webkit-input-placeholder {
+  color: lightgrey;
+}
+::-moz-placeholder {
+  color: lightgrey;
+}
+:-ms-input-placeholder {
+  color: lightgrey;
+}
+:-moz-placeholder {
+  color: lightgrey;
+}
+
+
+.navbar-default .navbar-nav > li > a {
+    color: #ccc;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #ababab;
+}
+
+ .navbar-brand {
+   font-family: 'Share Tech Mono', monospace;
+   color: #50db3b;
+ }
+
+ .navbar-default .navbar-brand {
+     color: #50db3b;
+ }
+
+ .navbar-default .navbar-brand:hover {
+     color: #50db3b;
+ }
+
+ .navbar-default {
+  background-color: #5a5a5a;
+}
+
+.form-control {
+  background-color: #ccc;
+  border-color: #ccc;
+  color: #5a5a5a;
+
+}
+
+.form-control:focus {
+  background-color: #ccc;
+  border-color: #ccc;
+  color: #5a5a5a;
+
+}
+
+.main {
+  max-width: 1000px;
+  float: none;
+  margin: 0 auto;
+}
+
+.content-container {
+   width: 600px;
+   background-color:#5a5a5a;
+   float: none;
+   margin: 0 auto;
+   margin-top: 100px;
+   border: 1px;
+   border-style: solid;
+   border-color: #e3e3e3;
+}
+
+.signup-container {
+   width: 350px;
+   background-color:#5a5a5a;
+   float: none;
+   margin: 0 auto;
+   margin-top: 100px;
+   border: 1px;
+   border-style: solid;
+   border-color: #e3e3e3;
+}
+
+.contents {
+  margin: 20px;
+}
+
+.signup-brand {
+  color: #50db3b;
+}
+
+.signup-contents {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.tagline {
+  margin-top: -10px;
+}
+
+.form-field, .form-submit {
+  margin: 3px;
+}
+
+.container-fluid {
+  max-width: 1000px;
+  float: none;
+  margin: 0 auto;
+}
+
+.btn:hover,
+.btn:focus,
+.btn.focus {
+   color: #5a5a5a;
+   background-color: #50db3b;
+   text-decoration: none;
+ }
+
+ .btn-default {
+     color: #5a5a5a;
+     background-color: #50db3b;
+     border-color: #50db3b;
+ }

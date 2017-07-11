@@ -36,6 +36,10 @@ As a user
 So that I can see what's going on with my account,
 I want to be able to print a account statement which shows all transactions
 
+As a product manager,
+So that I can make sure that users interact with the prototype,
+I want to have some basic design which makes the side look ok.
+
 ```
 ---
 Update1:
@@ -49,3 +53,4 @@ Live on Heroku, check it out:
 https://serene-wave-11867.herokuapp.com/
 
 ---
+  
