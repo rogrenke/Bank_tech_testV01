@@ -1,0 +1,33 @@
+<div class="signup-container">
+  <div class="signup-contents">
+    <div id="clearance" class="sign-up">
+      <h2 class="signup-brand"> TechTestBank </h2>
+      <p class="tagline">The money repository</p>
+
+      <br>
+      <div class="sign-up-input">
+        <%= form_for @user do |form| %>
+          <div class="text-field">
+            <%= form.text_field :email, type: 'email', placeholder: 'Email', class: 'form-field' %>
+          </div>
+
+          <div class="password-field">
+            <%= form.password_field :password, placeholder: 'Password', class: 'form-field' %>
+          </div>
+
+          <div class="submit-field">
+            <%= form.submit "Sign up", class: 'form-submit btn btn-default' %>
+          </div>
+
+        <% end %>
+      </div>
+
+      <div class="link-sign-up-or-in">
+        <br>
+        <p>Already have an account? <span>
+          <%= link_to t(".sign_in"), sign_in_path %>
+        </span></p>
+      </div>
+    </div>
+  </div>
+</div>
